@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html,body{
+    width: 100%;
+    background-color: var(--black);
+}
+ :root{
+    --white:#fff;
+    --black:#000000;
+    --bg-color:#121212;
+    --green:#1ed760;
+    --hover:#b3b3b3;
+    
+} 
+/* .box{
+   height: 300px;
+   width: 300px;
+   background-color: red;
+}
+.box2{
+    height: var(--hbox);
+    width: var(--wbox);
+    background-color: var(--black);
+}
+.box3{
+    height: var(--hbox);
+    width: var(--wbox);
+    background-color:purple;
+} */ 
+ .flex{
+    display: flex;
+ }
+ .nav{
+    height: 50px;
+    width: 100%;
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    
+ }
+ .nav i{
+   padding: 11px;
+   border-radius: 50%;
+   background-color: var(--bg-color);
+   font-size: 27px;
+ }
+ .nav input{
+   height: 30px;
+   width: 250px;
+   background-color: var(--bg-color);
+   padding: 5px;
+   border: none;
+   outline: none;
+   border-radius: 10px;
+ }
+ .nav input::placeholder{
+   color: var(--hover);
+ }
+ .grp1 i{
+font-size: 29px;
+
+ }
+ .grp2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+ }
+
+ .search{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color:var(--hover); */
+  border-radius: 20px;
+  }
+ .search i{
+  font-size: 20px;
+  color: var(--hover);
+  /* background-color:var(--hover); */
+
+ }
+ .search input{
+  /* padding-left: 30px; */
+  width: 400px;
+  font-size: medium;
+  height: 45px;
+  border-radius: 50px;
+  color: var(--bg-color);
+
+ }
+ .grp3{
+  display: flex;
+  gap: 20px;
+ }
+ .grp3 button{
+  border-radius: 50px;
+  font-size: large;
+  font-weight: 700;
+  font-style: bold;
+  
+ }
+ .signup{
+  height: 40px;
+  width: 80px;
+background-color: var(--bg-color);
+color: var(--hover);
+border: none;
+ }
+ .signup:hover{
+  color: var(--white);
+ }
+ 
+ .login{
+  height: 45px;
+  width: 100px;
+  background-color: var(--white);
+  color: var(--black);
+ }
+ /*navbar ended*/
+
+
+ /* main card started*/
+
+ .main{
+  height: calc(100vh - 130px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+ }
+ .left{
+  height:97% ;
+  width: 20%;
+  overflow: hidden;
+  background-color:var(--bg-color);
+  border-radius: 10px;
+  display: flex;
+ }
+ .right{
+height: 97%;
+width: 80%;
+background-color: var(--bg-color);
+overflow: scroll;
+border-radius: 10px;
+padding: 10px;
+ }
+ .right::-webkit-scrollbar{
+  display: none;
+ }
+ .cardwrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  overflow: hidden;
+  border-radius: 10px;
+  justify-content: space-around;
+  padding: 10px;
+ }
+ .card{
+  height: 200px;
+  width: 250px;
+  border-radius: 15px;
+  /* border: 2px solid violet; */
+  padding: 10PX;
+  position: relative;
+ }
+ .card i{
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: var(--green);
+  color: var(--black);
+  position: absolute;
+  border-radius: 50%;
+  right: 20px;
+  bottom: 50px;
+  opacity: 0;
+
+ }
+ .card:hover i{
+opacity: 1;
+ }
+ .card:hover{
+  background-color: var(--black);
+ }
+ .card-img{
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 10px;
+ }
+ .card-img img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+ }
+.audioplayer{
+  height: 80px;
+  background-color: var(--black);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.audioplayer audio{
+  width: 40%;
+}
+audio::-webkit-media-controls-panel{
+  background-color:rgba(0, 0, 0, 0.763);
+}
+
+.navleft{
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  margin-left: 20px;
+}
+.navl1{
+  margin: 20px;
+}
+.navl1 i:hover{
+background-color: var(--hover);
+border-radius: 50%;
+}
